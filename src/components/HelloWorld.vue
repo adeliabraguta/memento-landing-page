@@ -136,43 +136,39 @@ h2 {
 
   .logo {
     padding-top: 80px;
-    padding-left: 20vw;
+    padding-left: 10vw;
     width: 350px;
     height: auto;
     padding-bottom: 16px;
     @media screen and (max-width: 800px) {
       padding-top: 180px;
       width: 250px;
-      padding-left: 10vw;
     }
   }
 
   h1 {
-    padding-left: 20vw;
+    padding-left: 10vw;
     color: white;
     font-size: 128px;
     @media screen and (max-width: 800px) {
       width: 250px;
       font-size: 64px;
-      padding-left: 10vw;
     }
   }
 
   p {
-    padding-left: 20vw;
+    padding-left: 10vw;
     color: white;
     font-size: 2vw;
     @media screen and (max-width: 800px) {
       font-size: 20px;
-      padding-left: 10vw;
     }
   }
 
   h3, a {
-    padding-left: 20vw;
+    padding-left: 10vw;
     @media screen and (max-width: 800px) {
       font-size: 20px;
-      padding-left: 10vw;
     }
   }
 
@@ -197,15 +193,15 @@ h2 {
       color: white;
       font-size: 24px;
       position: absolute;
-      bottom: 64px;
-      right: 90px;
+      bottom: 24px;
+      right: 40px;
       transition: all 0.5s ease-in-out;
     }
 
     hr {
       position: absolute;
-      bottom: 64px;
-      right: 64px;
+      bottom: 24px;
+      right: 24px;
       border: none;
       background-color: #fff;
       height: 70px;
@@ -243,7 +239,9 @@ h2 {
 .container-2 {
   padding: 0 10vw;
 
-
+  h2{
+    padding-top: 0px;
+  }
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -419,13 +417,17 @@ h2 {
   div {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-
+    @media screen and (max-width: 800px) {
+      grid-template-columns: 1fr;
+    }
     img {
       cursor: pointer;
       padding-top: 48px;
       width: 100%;
       transition: all 0.5s ease;
-
+      @media screen and (max-width: 800px) {
+        padding-top: 12px;
+      }
       &:hover {
         transform: translateY(-30px);
       }
